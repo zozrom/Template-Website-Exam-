@@ -29,11 +29,21 @@ p {
   margin: 0;
   padding: 0;
 }
+img{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+
 
 /* Intro (вступ) "Перша сторінка"*/
 .intro {
   width: 100%; /* Блок на всю ширину екрана*/
-  height: 100vh;
+  height: max-content;
   background: linear-gradient(
       to bottom,
       rgba(92, 77, 66, 0.8) 0,
@@ -81,19 +91,20 @@ nav a:hover {
   font-weight: 400px;
 }
 
-/*Content*/
+
+
+
+                    /*Content*/
 
 .content {
   width: 100%; /*В блоке контент растягиваеться на всю ширину*/
-  border: 0px solid green;
-  width: 852px;
   margin: auto;
-  margin-bottom: 155px;
   max-width: 800px;
+  padding-top: 230px;
+  padding-bottom: 230px;
 }
 h1.capter_1 {
   text-align: center;
-  padding-top: 222px;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 56px;
   font-weight: bold;
@@ -112,13 +123,13 @@ h1.capter_1 {
 p.data {
   margin: auto;
   text-align: center;
-  width: 700px;
+  max-width: 700px;
   color: rgba(255, 255, 255, 0.75);
   font-family: "Merriweather", serif;
   font-weight: 400px;
   font-size: 18px;
 }
-.btn {
+.btn, .btn_2 {
   text-align: center;
   color: white;
   display: block;
@@ -131,35 +142,159 @@ p.data {
   background-color: #f4623a;
   height: 60px;
   width: 190px;
-  margin: 40px auto;
+  margin: 20px auto;
   border-radius: 60px;
 }
-
+.btn_2{
+  background-color: white;
+  color: black;
+opacity: 0.9;
+}
+.btn_2:hover{
+  background-color: #ca9588;
+}
 a.btn:hover {
   background-color: #e04822;
 }
 
-/*Section*/
+
+
+
+
+                /*Content_2*/
 
 .content_2 {
   width: 100%;
-  height: 100vh;
   background-color: #f4623a;
+
 }
-.chapter_3_section {
+.chapter_3 {
   display: block;
   font-family: "Merriweather Sans", sans-serif;
   color: white;
-  max-width: 720px;
   margin: 0 auto;
   text-align: center;
+  max-width: 720px;
+
   padding-top: 120px;
 }
-.chapter_3_section::after {
+.chapter_3::after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
   background-color: white;
   margin: 25px auto;
+}
+.data_2{
+  max-width: 720px;
+
+margin: auto;
+text-align: center;
+color: rgba(255, 255, 255, 0.75);
+font-family: 'Merriweather', serif;
+}
+.content_2_btn_block{
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+             /*content_3*/
+
+.content_3{
+background-color: white;
+max-width: 1500px;
+margin: auto;
+}
+.chapter_4{
+  max-width: 375px;
+  margin: auto;
+}
+.content_3 h1{
+  text-transform: capitalize;
+  font-family: "Merriweather Sans", sans-serif;
+color: black;
+font-weight: normal;
+text-align: center;
+padding-top: 50px;
+}
+.chapter_4::after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  background-color:#f4623a; 
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+
+
+.service{
+  display: block;
+  margin: 0px 240px;
+}
+.service_item{
+  display: inline-block;
+width: 230px;
+  margin: 0px 10px;
+  text-align: center;
+  color: #6c757d;
+}
+.service_item img{
+  margin-left: 20px;
+  width: auto;
+
+}
+.service_hapter{
+
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Merriweather', serif;
+}
+.serv_2{
+
+  margin-top: 30px;
+}
+.serv_3{
+  margin-top: 30px;
+}
+.serv_4{
+  margin-top: 34px;
+
+}
+
+
+
+
+
+
+
+
+
+        /*Content 4*/
+.content_4{
+  width: 100%;
+  margin:100px 0px;
+  padding: 0px;
+}
+.img_content{
+  display: flex;
+  margin: 0px;
+}
+.img_content_2{
+  display: flex;
+  margin-top: -7px;
+}
+.img_block img{
+  height: 284px;
+  
 }
