@@ -1,0 +1,165 @@
+/*Основное*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: red; /*Поменять!!!*/
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Intro (вступ) "Перша сторінка"*/
+.intro {
+  width: 100%; /* Блок на всю ширину екрана*/
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../img/background_img.jpg") center no-repeat;
+  background-size: cover; /*Именно с cover блок станет по центру и займет 
+   всю площадь екрана*/
+}
+
+/*Header (фиксированый блок)*/
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 5px 4px #3f3e3e;
+  height: 72px;
+}
+
+nav {
+  width: 1110px;
+  margin: auto;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  margin: 18px auto;
+
+  display: flex; /*Ставим все елементи в ряд */
+  justify-content: space-between; /*По бокам*/
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ca1717;
+}
+
+.link {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+/*Content*/
+
+.content {
+  width: 100%; /*В блоке контент растягиваеться на всю ширину*/
+  border: 0px solid green;
+  width: 852px;
+  margin: auto;
+  margin-bottom: 155px;
+  max-width: 800px;
+}
+h1.capter_1 {
+  text-align: center;
+  padding-top: 222px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 70px;
+  color: white;
+  text-transform: uppercase;
+}
+.capter_1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f4623a;
+  margin: 25px auto;
+}
+p.data {
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Merriweather", serif;
+  font-weight: 400px;
+  font-size: 18px;
+}
+.btn {
+  text-align: center;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  content: "";
+  text-transform: uppercase;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  background-color: #f4623a;
+  height: 60px;
+  width: 190px;
+  margin: 40px auto;
+  border-radius: 60px;
+}
+
+a.btn:hover {
+  background-color: #e04822;
+}
+
+/*Section*/
+
+.content_2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4623a;
+}
+.chapter_3_section {
+  display: block;
+  font-family: "Merriweather Sans", sans-serif;
+  color: white;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+}
+.chapter_3_section::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 25px auto;
+}
