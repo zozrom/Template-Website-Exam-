@@ -21,21 +21,25 @@
   <!--font-family: 'Merriweather', serif;
 -->
   <title>Web Exam</title>
+
+
   <body>
     <div class="intro">
       <div class="header">
         <nav>
-          <div class="start_bootstrap_in_header">
-            <a href="#">Start Bootstrap</a>
+          <div >
+            <a href="#ex1">Start Bootstrap</a>
           </div>
           <div class="nav_link_in_header">
-            <a class="link" href="">About</a>
-            <a class="link" href="">Services</a>
-            <a class="link" href="">Portfolio</a>
-            <a class="link" href="">Contact</a>
+            <a class="link" href="#ex1">About</a>
+            <a class="link" href="#ex2">Services</a>
+            <a class="link" href="#ex3">Portfolio</a>
+            <a class="link" href="#ex4">Contact</a>
           </div>
         </nav>
       </div>
+
+      <section id="ex1">
       <div class="content">
         <h1 class="capter_1">Your Favorite Source of Free Bootstrap Themes</h1>
         <p class="data">
@@ -47,7 +51,9 @@
         <a href="#" class="btn">find out more</a>
       </div>
     </div>
+  </section>
 
+    <section id="ex2">
     <div class="content_2">
       <div class="chapter_3"><h1>We've got what you need!</h1></div>
       <div class="data_2">
@@ -98,10 +104,13 @@
         </div>
       </div>
     </div>
+  </section>
 
+
+    <section id="ex3"><!--Якорь-->
     <div class="content_4">
       <div class="img_content">
-        <div class="img_block"><img src="img/content_img/1.jpg" alt="" /></div>
+        <div class="img_block"><a href="#ud"><img src="img/content_img/1.jpg" alt="" /></a></div>
         <div class="img_block"><img src="img/content_img/2.jpg" /></div>
         <div class="img_block"><img src="img/content_img/3.jpg" /></div>
       </div>
@@ -110,6 +119,47 @@
         <div class="img_block"><img src="img/content_img/5.jpg" /></div>
         <div class="img_block"><img src="img/content_img/6.jpg" /></div>
       </div>
+    </div>
+  </section>
+
+
+    <div class="content_5">
+      <div class="chapter_5"><h1>Free Download at Start Bootstrap!</h1></div>
+      <a
+        ><div class="btn_in_content_5"><h5>Download now</h5></div></a
+      >
+    </div>
+
+
+    <section id="ex4"><!--Якорь-->
+    <div class="content_6 ">
+      <div class="chapter_6">
+        <h1>Let's Get In Touch!</h1>
+      </div>
+
+      <div >
+        <p class="content_6_some_data">  
+          Ready to start your next project with us? Give us a call or send us an
+          email and we will get back to you as soon as possible!
+        </p>
+      </div>
+
+      <div class="last_block_item">
+          <div class="last_item">
+            <img src="img/item/Telephone.png">
+            <p>+1 (202) 555-0149</p>
+          </div>
+          <div class=" last_2_item">
+            <img src="img/item/letter.png">
+            <div>            <a>contact@yourwebsite.com</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+      <div class="mini_footer">
+  <p>Copyright &copy; 2019 - Start Bootstrap</p>
+</div>
     </div>
   </body>
 </html>
